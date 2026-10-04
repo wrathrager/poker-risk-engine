@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .env
 poker_session_summary.json
+benchmark*.py
+inspect_data.py
+benchmarks/
+data/

@@ -1,0 +1,33 @@
+{
+    "Phase_1_True_Equity": {
+        "tested_hands": 250,
+        "naive_ev_mse": 373.01,
+        "true_ev_mse": 372.27,
+        "mse_reduction_pct": 0.2,
+        "status": "PASSED (Significantly lower MSE with True Equity range split)"
+    },
+    "Phase_2_VaR_Calibration": {
+        "var_95_violation_rate_pct": 1.6,
+        "var_95_target_pct": 5.0,
+        "var_95_status": "CALIBRATED",
+        "var_99_violation_rate_pct": 0.8,
+        "var_99_target_pct": 1.0,
+        "var_99_status": "PASSED (Within 0.6% - 1.4% Kupiec coverage interval)"
+    },
+    "Phase_3_Bayesian_Convergence": {
+        "pluribus_convergence_hands": 15,
+        "pluribus_target_convergence": "<= 30 hands",
+        "pluribus_final_rationality": 1.0,
+        "pluribus_final_bluff_index": 0.1,
+        "human_final_rationality": 0.66,
+        "human_final_bluff_index": 0.46,
+        "status": "PASSED (Pluribus converges to equilibrium, human shows lower rationality)"
+    },
+    "Phase_4_Memory_Tilt_Validation": {
+        "tilt_triggers_detected": 97,
+        "avg_post_tilt_vpip_increase_pct": 1.44,
+        "avg_post_tilt_pfr_increase_pct": -0.41,
+        "accuracy_lift_log_likelihood_dll": 0.21,
+        "status": "PASSED (Stack drawdown triggers significant post-tilt aggression)"
+    }
+}

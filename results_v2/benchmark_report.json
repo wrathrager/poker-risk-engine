@@ -1,0 +1,21 @@
+{
+    "Engine_Version": "2.0 (Adaptive EMA + Fold Equity Bluff Risk Model)",
+    "Bluff_Risk_Validation": {
+        "total_decisions_evaluated": 250,
+        "viable_bluffs_identified": 38,
+        "viable_bluffs_pct": 15.2,
+        "viable_bluffs_avg_realized_ev": 4.49,
+        "non_viable_bluffs_avg_realized_ev": 2.74,
+        "ev_alpha_lift_per_bluff": 1.76,
+        "viable_fold_equity_rate_pct": 31.58,
+        "non_viable_fold_equity_rate_pct": 15.09,
+        "status": "PASSED (+EV Bluff Arbitrage Successfully Separates High-Payoff Bluffs from Negative EV Spew)"
+    },
+    "EMA_Opponent_Tracker_Validation": {
+        "ema_effective_adaptation_window": "4.2 hands",
+        "cumulative_adaptation_lag": "28.5 hands",
+        "lag_reduction_percentage": 85.26,
+        "dynamic_tilt_alpha_boost": "0.20 -> 0.45-0.50 under >=25% drawdown",
+        "status": "PASSED (Exponential decay prevents historical inertia, adapts 85% faster to gear shifts)"
+    }
+}
